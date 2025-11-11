@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quick CRH — Rédigez vos comptes rendus hospitaliers en quelques secondes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Assistant IA pensé pour les internes. 3 essais gratuits sans inscription. CRH rapides, clairs et conformes aux standards." />
+  <style>
+    :root { --brand:#1E3A8A; --brand-2:#2563EB; --bg:#0B1220; }
+    html { scroll-behavior: smooth; }
+    .container { max-width: 1200px; }
+    .shadow-soft { box-shadow: 0 10px 30px rgba(2,6,23,0.12); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
+    <nav class="container mx-auto px-6 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="3" y="3" width="18" height="18" rx="5" class="fill-blue-600"></rect>
+          <path d="M7 12h10M9.5 8.5h5M9.5 15.5h5" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span class="font-semibold text-lg">Quick CRH</span>
+      </a>
+      <div class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#how" class="hover:text-blue-700">Comment ça marche</a>
+        <a href="#features" class="hover:text-blue-700">Pour les internes</a>
+        <a href="#pricing" class="hover:text-blue-700">Tarifs</a>
+        <a href="#faq" class="hover:text-blue-700">FAQ</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="#demo" class="hidden sm:inline-block px-4 py-2 text-sm font-medium rounded-lg border border-blue-700 text-blue-700 hover:bg-blue-50">Démo</a>
+        <a href="#pricing" class="inline-block px-4 py-2 text-sm font-medium rounded-lg bg-blue-700 text-white hover:bg-blue-800">S'abonner</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="relative">
+    <div class="absolute inset-0 bg-gradient-to-b from-blue-50 to-white"></div>
+    <div class="container mx-auto px-6 py-20 relative">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs mb-5">
+            <span>🎓 Pensé pour les internes</span> <span>•</span> <span>⚡ 3 essais gratuits</span> <span>•</span> <span>🔒 Sans inscription</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-slate-900">
+            Rédigez vos CRH <span class="text-blue-700">en quelques secondes</span>
+          </h1>
+          <p class="mt-5 text-lg text-slate-600 max-w-xl">
+            Quick CRH est l’assistant IA conçu pour les internes : des comptes rendus hospitaliers clairs, rapides et structurés, inspirés des standards HAS. Essayez-le en 1 clic.
+          </p>
+          <div class="mt-7 flex flex-wrap items-center gap-3">
+            <a href="#demo" class="px-5 py-3 rounded-xl bg-blue-700 text-white font-semibold hover:bg-blue-800 shadow-soft">Essayer gratuitement (3 CRH inclus)</a>
+            <a href="#how" class="px-5 py-3 rounded-xl border border-slate-300 text-slate-700 font-semibold hover:bg-white">Voir comment ça marche</a>
+          </div>
+        </div>
+        <div>
+          <div class="rounded-2xl border border-slate-200 bg-white p-4 md:p-6 shadow-soft">
+            <div class="flex items-center justify-between pb-4 border-b border-slate-200">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-lg bg-blue-600"></div>
+                <div>
+                  <div class="font-semibold">Quick CRH</div>
+                  <div class="text-xs text-slate-500">Assistant IA</div>
+                </div>
+              </div>
+              <span class="text-xs px-2 py-1 rounded-full bg-green-50 text-green-700 border border-green-200">Prévisualisation</span>
+            </div>
+            <div class="py-5 grid gap-3">
+              <label class="text-sm text-slate-600">Résumé de l’hospitalisation</label>
+              <textarea class="w-full h-28 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-600 p-3" placeholder="Collez ici les éléments clés (motif d’admission, ATCD, examens, PEC, sortie)…"></textarea>
+              <button class="mt-2 inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-blue-700 text-white font-medium hover:bg-blue-800">
+                Générer le CRH
+              </button>
+              <div class="rounded-lg border border-slate-200 p-3">
+                <div class="text-xs text-slate-500 mb-2">Sortie</div>
+                <div class="text-sm leading-relaxed">
+                  Patient hospitalisé du 03/11 au 07/11 pour pneumonie lobaire… Antibiothérapie IV relayée PO. Arrêt de travail 10 jours. RDV pneumologie J+30…
+                </div>
+              </div>
+            </div>
+            <div class="pt-4 text-xs text-slate-500">*Démo statique — la vraie app s’ouvre via le bouton « Démo ».</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="demo" class="py-20 bg-white text-center">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Essayez Quick CRH gratuitement</h2>
+      <p class="text-slate-600 mb-8">3 CRH gratuits sans inscription. Lancez la vraie démo hébergée en ligne.</p>
+      <a href="https://quick-crh-mvp.streamlit.app" target="_blank" class="px-6 py-3 rounded-xl bg-blue-700 text-white font-semibold hover:bg-blue-800 shadow-soft">Lancer la démo</a>
+    </div>
+  </section>
+
+  <section id="pricing" class="py-20 bg-slate-50">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold mb-6">Tarification simple</h2>
+      <p class="text-slate-600 mb-10">Commencez gratuitement, passez en illimité quand vous êtes prêt.</p>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 bg-white rounded-2xl border border-slate-200">
+          <div class="text-blue-700 font-medium">Gratuit</div>
+          <div class="text-3xl font-extrabold">0€</div>
+          <p class="mt-2 text-sm text-slate-600">3 CRH d’essai — sans inscription</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl border-2 border-blue-700 shadow-soft">
+          <div class="text-blue-700 font-medium">Interne</div>
+          <div class="text-3xl font-extrabold">5,90€ <span class="text-base text-slate-500">/mois</span></div>
+          <p class="mt-2 text-sm text-slate-600">CRH illimités, mode didactique et export Word/PDF</p>
+        </div>
+        <div class="p-6 bg-white rounded-2xl border border-slate-200">
+          <div class="text-blue-700 font-medium">Équipe</div>
+          <div class="text-3xl font-extrabold">29€ <span class="text-base text-slate-500">/mois</span></div>
+          <p class="mt-2 text-sm text-slate-600">5 internes, suivi qualité et exports avancés</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="py-20 bg-white">
+    <div class="container mx-auto px-6 max-w-3xl">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-10">FAQ</h2>
+      <div class="space-y-6">
+        <details class="group rounded-xl bg-slate-50 border border-slate-200 p-5">
+          <summary class="flex items-center justify-between cursor-pointer">
+            <span class="font-semibold">Ai-je besoin d’un compte pour essayer ?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">▾</span>
+          </summary>
+          <p class="mt-3 text-slate-600">Non, vous disposez de 3 CRH gratuits sans inscription. Ensuite, l’abonnement Interne débloque un usage illimité.</p>
+        </details>
+        <details class="group rounded-xl bg-slate-50 border border-slate-200 p-5">
+          <summary class="flex items-center justify-between cursor-pointer">
+            <span class="font-semibold">Mes données sont-elles conservées ?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">▾</span>
+          </summary>
+          <p class="mt-3 text-slate-600">Non, la version de démo ne conserve aucune donnée. Les textes sont traités temporairement pour la génération uniquement.</p>
+        </details>
+        <details class="group rounded-xl bg-slate-50 border border-slate-200 p-5">
+          <summary class="flex items-center justify-between cursor-pointer">
+            <span class="font-semibold">Comment fonctionne l’abonnement ?</span>
+            <span class="text-slate-400 group-open:rotate-180 transition">▾</span>
+          </summary>
+          <p class="mt-3 text-slate-600">L’abonnement Interne se souscrit via Stripe Checkout et peut être annulé à tout moment. Vous accédez immédiatement à Quick CRH illimité.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-slate-900 text-slate-200 py-10 mt-10">
+    <div class="container mx-auto px-6 text-center space-y-3">
+      <div class="font-semibold text-white">Quick CRH</div>
+      <div class="text-sm text-slate-400">© <span id="year"></span> Quick CRH — Fait avec ❤️ pour les internes</div>
+      <div class="flex justify-center gap-6 text-sm text-slate-400">
+        <a href="#" class="hover:text-white">Mentions légales</a>
+        <a href="#" class="hover:text-white">Confidentialité</a>
+        <a href="#" class="hover:text-white">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
